@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_products_table
+    columns:
+      - name: SKU_ID
+        tests:
+          - unique
+          - not_null
+    columns:
+      - name: Unit_Cost
+        tests:
+          - not_null
+    columns:
+      - name: Unit_Price
+        tests:
+          - not_null
+    columns:
+      - name: Supplier_ID
+        tests:
+          - not_null
